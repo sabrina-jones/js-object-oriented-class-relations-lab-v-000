@@ -9,6 +9,18 @@ class Driver {
       this.name  = name;
       store.drivers.push(this);
   }
+
+  passengers(){
+  return store.passengers.filter(passenger=>{
+    return passenger.driverId = this.id
+  })
+}
+trips(){
+  return store.trips.filter(trip=>{
+    return trip.driverId = this.id
+  })
+}
+  
 }
 
 
